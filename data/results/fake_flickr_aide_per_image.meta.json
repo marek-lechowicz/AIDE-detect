@@ -1,0 +1,22 @@
+{
+  "script": "test_fake_flickr_paired.py",
+  "run_timestamp_utc": "2026-07-22T22:11:21.417546+00:00",
+  "seed": 0,
+  "ckpt": "models_files/sd14_train-003.pth",
+  "jpeg_equalize": true,
+  "use_amp": true,
+  "batch_size": 32,
+  "generators": [
+    "sd_1_5",
+    "sd_3_5_large",
+    "sdxl_turbo",
+    "z_image_turbo",
+    "flux_1_dev",
+    "flux_fill_flux_1_dev",
+    "flux_fill_sd_3_5_large",
+    "flux_fill_real_rescaled"
+  ],
+  "dataset_root": "/home/marek/FakeFlickr/data/fake-flickr",
+  "test_split": "/home/marek/FakeFlickr/data/flickr30k_entities/test.txt",
+  "n_per_image_rows": 16000
+}
